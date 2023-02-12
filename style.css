@@ -1,0 +1,38 @@
+#board {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 72px;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.square:nth-child(3n+1) {
+	border-left: none;
+}
+
+.square:nth-child(3n) {
+	border-right: none;
+}
+
+.square:nth-child(-n+3) {
+	border-top: none;
+}
+
+.square:nth-child(n+7) {
+	border-bottom: none;
+}
+
+.square:hover {
+	background-color: #eee;
+}
+
